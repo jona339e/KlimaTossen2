@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    background-color: white;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;           /*centers the wrapper container so there is whitespace on each side*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-head{
+    height: 50px;
+    background-color: #5882c0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+
+
+.navigation{
+    height: 100%;
+    display: flex;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    /* font-family: 'Open Sans', sans-serif;    */
+    display: flex;                              /* display skal være flex for at align-content virker*/
+    align-content: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.nav-item:visited{
+    color: white;
+}
+
+.nav-item:hover{
+    background-color: #71a5e0;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-left{
+color: white;
+width: 118px;
+overflow: hidden;
+background-color: #5882c0;
+height: 100%; /* removes the overlapping white border*/
+}
+
+.logo-right{
+color: #5882c0;
+background-color: white;
+position: relative;
+left: -10px;
+z-index: -1;
+height: 100%; /* removes the overlapping blue line*/
+}
+
+.hero{
+    background-image: url(../img/art-close-up-ecology-886521-SFW.png);
+    height: 457px;
+    background-color: #b5d3f2;
+    margin: 15px 80px;
+    background-position: -60px 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.white-text{
+color: white;
+font-size: 1.8em;
+}
+
+.black-text{
+    font-style: italic;
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+.hero-logo{
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: right;
+}
+
+.hero-logo span:first-child{
+color: white;
+}
+.hero-logo span:last-child{
+    color: #5882c0;
+}
